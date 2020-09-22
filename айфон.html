@@ -1,0 +1,1092 @@
+<!doctype html>
+<html>
+ <head> 
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script> 
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Kavoon" rel="stylesheet"> 
+  <title>cemoxafon</title></title> 
+ </head> 
+ <body> 
+  <div id="phone"> 
+   <div id="camera"> 
+    <div id="lense"></div> 
+   </div> 
+   <div id="screen"> 
+    <!--
+                    Start Apps
+                --> 
+    <application id="weather_app"> 
+     <embed src="https://domagoj-puljic.neocities.org" style="width:75vw;height:75vh;margin:0;"> 
+    </application> 
+    <application id="cal_app" hidden="true"> 
+     <table id="cal" border="0"> 
+      <tbody> 
+       <tr> 
+        <td colspan="7" class="day" id="datetitle"></td> 
+       </tr> 
+       <tr> 
+        <td class="day thd">Sun</td> 
+        <td class="day thd">Mon</td> 
+        <td class="day thd">Tue</td> 
+        <td class="day thd">Wed</td> 
+        <td class="day thd">Thu</td> 
+        <td class="day thd">Fri</td> 
+        <td class="day thd">Sat</td> 
+       </tr> 
+       <tr id="first"> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+       </tr> 
+       <tr> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+       </tr> 
+       <tr> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+       </tr> 
+       <tr> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+       </tr> 
+       <tr> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+       </tr> 
+       <tr> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+       </tr> 
+      </tbody> 
+     </table> 
+    </application> 
+    <application id="griderly" hidden="true"> 
+     <embed src="https://griderly.neocities.org/" style="width:75vw;height:75vh;margin:0;"> 
+    </application> 
+    <application id="cookie_clicker" hidden="true"> 
+     <div id="cookies">
+       0 Cookies 
+     </div> 
+     <img src="http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/256/Apps-preferences-web-browser-cookies-icon.png" id="cookie"> 
+    </application> 
+    <application id="recentApps" hidden="true"> 
+     <div id="background_recent"></div> 
+     <div id="currentRecent"></div> 
+    </application> 
+    <application id="dialer" style="background: #EEE;" hidden="true"> 
+     <div id="dialer_scn"></div> 
+     <table id="dialer_pad"> 
+      <tbody> 
+       <tr> 
+        <td> 
+         <div class="dialerBtn">
+           1 
+         </div></td> 
+        <td> 
+         <div class="dialerBtn">
+           2 
+         </div></td> 
+        <td> 
+         <div class="dialerBtn">
+           3 
+         </div></td> 
+       </tr> 
+       <tr> 
+        <td> 
+         <div class="dialerBtn">
+           4 
+         </div></td> 
+        <td> 
+         <div class="dialerBtn">
+           5 
+         </div></td> 
+        <td> 
+         <div class="dialerBtn">
+           6 
+         </div></td> 
+       </tr> 
+       <tr> 
+        <td> 
+         <div class="dialerBtn">
+           7 
+         </div></td> 
+        <td> 
+         <div class="dialerBtn">
+           8 
+         </div></td> 
+        <td> 
+         <div class="dialerBtn">
+           9 
+         </div></td> 
+       </tr> 
+       <tr> 
+        <td> 
+         <div class="dialerBtn">
+           * 
+         </div></td> 
+        <td> 
+         <div class="dialerBtn">
+           0 
+         </div></td> 
+        <td> 
+         <div class="dialerBtn">
+           # 
+         </div></td> 
+       </tr> 
+       <tr> 
+        <td colspan="3">CALL</td> 
+       </tr> 
+      </tbody> 
+     </table> 
+    </application> 
+    <application id="settings" hidden="true"> 
+     <div id="settings_title">
+       Settings 
+     </div> 
+     <div class="settings_gap"></div> 
+     <div class="settings_content"> 
+      <table id="toggles"> 
+       <tbody> 
+        <tr> 
+         <td>Siri</td> 
+         <td><input type="checkbox" class="ios8-switch" id="siri_active" checked> <label for="siri_active"></label></td> 
+        </tr> 
+       </tbody> 
+      </table> 
+     </div> 
+     <div class="settings_gap"></div> 
+     <div class="settings_content"> 
+      <a href="https://code.sololearn.com/W8XpSCS9yfra/?ref=app">View Weather Code</a> 
+     </div> 
+     <p class="settings_desc">Please suggest app ideas in the comments</p> 
+    </application> 
+    <application id="brokenSiri" hidden="true"> 
+     <div>
+       Enable Siri in the settings to use this feature 
+     </div> 
+    </application> 
+    <application id="siri" hidden="true"> 
+     <div id="siri_content">
+ Я сири блять и не лезь ко мне.    
+     </div> 
+     <img src="https://thumbs.gfycat.com/VigorousWigglyEel-max-1mb.gif" style="height: 41%; width: 100%;opacity: 0.85;"> 
+    </application> 
+    <application id="browser" hidden="true"> 
+     <div style="height:10vh;display: flex;align-items: center;justify-content: center;background: #FFF;"> 
+      <input type="search" id="searchbar" placeholder="bing.com"> 
+     </div> 
+     <embed src="https://bing.com/search" id="browse" style="width:75vw;height:65vh;margin:0;overflow: auto;"> 
+    </application> 
+    <application id="calculator" hidden="true"> 
+     <div id="calc_scn">
+       0 
+     </div> 
+     <table id="calc_ctrl"> 
+      <tbody> 
+       <tr> 
+        <td class="lightCalc">AC</td> 
+        <td class="lightCalc">+/-</td> 
+        <td class="lightCalc">%</td> 
+        <td class="orangeCalc">÷</td> 
+       </tr> 
+       <tr> 
+        <td class="calcCtrl">7</td> 
+        <td class="calcCtrl">8</td> 
+        <td class="calcCtrl">9</td> 
+        <td class="orangeCalc">×</td> 
+       </tr> 
+       <tr> 
+        <td class="calcCtrl">4</td> 
+        <td class="calcCtrl">5</td> 
+        <td class="calcCtrl">6</td> 
+        <td class="orangeCalc">-</td> 
+       </tr> 
+       <tr> 
+        <td class="calcCtrl">1</td> 
+        <td class="calcCtrl">2</td> 
+        <td class="calcCtrl">3</td> 
+        <td class="orangeCalc">+</td> 
+       </tr> 
+       <tr> 
+        <td colspan="2" class="calcCtrl">0</td> 
+        <td class="calcCtrl">.</td> 
+        <td class="orangeCalc">=</td> 
+       </tr> 
+      </tbody> 
+     </table> 
+    </application> 
+    <!--
+                    End Apps
+                --> 
+    <application class="home"> 
+     <table id="apps"> 
+      <tbody> 
+       <tr> 
+        <td><span style="background-image: url(https://cdn.macrumors.com/article-new/2016/04/safari-icon-250x250.jpg); background-size: 100% 100%;" class="appIcon" id="safari" name="bing"></span></td> 
+        <td><span style="background-image: url(https://is2-ssl.mzstatic.com/image/thumb/Purple127/v4/1f/76/99/1f769906-b3e2-2825-7cc3-15cb97b6d760/mzl.hwvzfnhq.png/1200x630bb.jpg); background-size: 100% 100%;" class="appIcon" id="calc" name="Calculator"></span></td> 
+        <td><span style="background-image: url(https://static1.squarespace.com/static/50eca855e4b0939ae8bb12d9/t/53f64a43e4b054559b275026/1408649817754/); background-size: 100% 100%;" class="appIcon" id="sett" name="Settings"></span></td> 
+        <td><span id="calendar" class="appIcon" style="background:#FFF;" name="Calendar"></span></td> 
+       </tr> 
+       <tr> 
+        <td><span style="background-image: url(https://is4-ssl.mzstatic.com/image/thumb/Purple3/v4/80/59/60/805960bc-6a52-c550-9437-29a3e1cba6ee/mzl.vgdzmdbr.png/1200x630bb.jpg); background-size: 100% 100%;" class="appIcon" id="game" name="Cookie Clicker"></span></td> 
+        <td><span style="background-image: url(https://griderly.neocities.org/app-icon.png); background-size: 100% 100%;" class="appIcon" id="social" name="Griderly"></span></td> 
+        <td><span style="background-image: url(http://media.idownloadblog.com/wp-content/uploads/2013/12/iOS-7-weather-app-icon.png); background-size: 100% 100%;" class="appIcon" id="weather" name="Weather"></span></td> 
+        <td></td> 
+       </tr> 
+       <tr> 
+        <td></td> 
+        <td></td> 
+        <td></td> 
+        <td></td> 
+       </tr> 
+       <tr> 
+        <td></td> 
+        <td></td> 
+        <td></td> 
+        <td></td> 
+       </tr> 
+       <tr> 
+        <td></td> 
+        <td></td> 
+        <td></td> 
+        <td></td> 
+       </tr> 
+      </tbody> 
+     </table> 
+     <div id="primaryApps"> 
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Phone_rounded.svg/1024px-Phone_rounded.svg.png" id="phone" class="appIcon"> 
+     </div> 
+    </application> 
+   </div> 
+   <div id="topBarClock">
+     12:00 AM 
+   </div> 
+   <div id="ctrl">
+     ▢ 
+   </div> 
+  </div> 
+  <!--
+        <input type='checkbox' class='ios8-switch ios8-switch-lg' id='checkbox-3'>
+<label for='checkbox-3'>iOS8 switch (large)</label>
+<br>
+<input type='checkbox' class='ios8-switch' id='checkbox-1'>
+<label for='checkbox-1'>iOS8 switch</label>
+<br>
+<input type='checkbox' class='ios8-switch ios8-switch-sm' id='checkbox-2'>
+<label for='checkbox-2'>iOS8 switch (small)</label>
+
+        --> 
+ </body>
+</html>
+<style>
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: crosshair !important;
+}
+#phone {
+    width: 80vw;
+    height: 100vh;
+    border-radius: 20px;
+    background: linear-gradient(83deg, #111, #555, #111);
+}
+#screen {
+    height: 75vh;
+    width: 75vw;
+    position: fixed;
+    left: 12.5vw;
+    top: 10vh;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#background_recent {
+    height: 75vh;
+    width: 75vw;
+    position: fixed;
+    left: 12.5vw;
+    top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://dl.dropbox.com/s/zasgs5e2tvd6kob/0b4e4181e710af2e86d79d2008d9e87a.jpg');
+    background-size: 100% 100%;
+    filter: blur(10px);
+}
+#currentRecent {
+    height: 75vh;
+    width: 75vw;
+    position: fixed;
+    left: 12.5vw;
+    top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#ctrl {
+    height: 50px;
+    width: 50px;
+    background: linear-gradient(45deg, #333, #555, #333);
+    box-shadow: 0 0 2px #222 inset;
+    border-radius: 50%;
+    position: fixed;
+    left: calc(50% - 25px);
+    bottom: 2.5vh;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15pt;
+    user-select: none;
+}
+#topBarClock {
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75vw;
+    position: fixed;
+    left: 12.5vw;
+    top: 10vh;
+    text-align: center;
+    font-size: 10pt;
+    font-family: 'Roboto';
+    font-weight: 600;
+    color: #FFF;
+    letter-spacing: -1px;
+    text-shadow: 0 0 5px #000;
+    pointer-events: none;
+}
+application {
+    width: 100%;
+    height: 100%;
+}
+.not_working {
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+.home, #recentApps {
+    background-image: url('https://dl.dropbox.com/s/zasgs5e2tvd6kob/0b4e4181e710af2e86d79d2008d9e87a.jpg?');
+    background-size: 100% 100%;
+}
+#apps {
+    table-layout: fixed;
+    width: 100%;
+    height: 80%;
+    margin: 0;
+    padding: 0;
+}
+#recentApps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#primaryApps {
+    width: 100%;
+    height: 20%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.appIcon:active {
+    filter: brightness(75%);
+}
+.appIcon {
+    text-align: center;
+    height: 15vw;
+    width: 15vw;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3vw;
+    position: relative;
+}
+#apps .appIcon:after {
+    padding-top: 3px;
+    content: attr(name);
+    width: 15vw;
+    font-size: 7pt;
+    color: #FFF;
+    text-align: center;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'Roboto';
+}
+#primaryApps > .appIcon {
+    text-align: center;
+    height: 15vw;
+    width: 15vw;;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3vw;
+}
+#calc_scn {
+    height: calc(20% - 20px);
+    width: calc(100% - 20px);
+    padding: 10px;
+    color: #FFF;
+    background: #333;
+    text-align: right;
+    font-size: 35pt;
+    font-weight: lighter;
+    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    font-family: 'Roboto';
+}
+#calc_ctrl {
+    width: 100%;
+    height: 80%;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: 'Roboto';
+}
+#calc_ctrl > td {
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    font-size: 30pt;
+}
+#calc_ctrl > td:active {
+    filter: brightness(75%);
+}
+.calcCtrl {
+    background: #EEE;
+    color: #333;
+    box-shadow: 0 0 1px 0 #333 inset;
+}
+.orangeCalc {
+    background: #F80;
+    color: #FFF;
+    box-shadow: 0 0 1px 0 #333 inset;
+}
+.lightCalc {
+    background: #DDD;
+    color: #333;
+    box-shadow: 0 0 1px 0 #333 inset;
+}
+#siri {
+    background-image: url('https://i.pinimg.com/originals/23/da/97/23da973997be740325a5f50422d1d4aa.jpg');
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+#siri_content {
+    height: calc(60% - 90px);
+    width: calc(100% - 60px);
+    padding: 30px;
+    padding-top: 60px;
+    background: rgba(18, 18, 18, 0.85);
+    color: #FFF;
+    font-size: 20pt;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0 0 25px #000;
+}
+#brokenSiri {
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+#calendar {
+    font-family: arial;
+}
+#camera {
+    width: 10px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    position: fixed;
+    left: calc(50% - 5px);
+    border-radius: 50%;
+    top: 5vh;
+    box-shadow: 0 0 1px #fff inset;
+}
+#lense {
+    margin: 0;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background: radial-gradient(#000, #555, #777);
+}
+/* iOS Sliders borrowed from this codepen: https://codepen.io/aorcsik/pen/OPMyQp */
+input[type="checkbox"].ios8-switch {
+    position: absolute;
+    margin: 8px 0 0 16px;    
+}
+input[type="checkbox"].ios8-switch + label {
+    position: relative;
+    padding: 5px 0 0 50px;
+    line-height: 2.0em;
+}
+input[type="checkbox"].ios8-switch + label:before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 40px; /* x*5 */
+    height: 24px; /* x*3 */
+    border-radius: 16px; /* x*2 */
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+input[type="checkbox"].ios8-switch + label:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0px;
+    top: 0px;
+    width: 24px; /* x*3 */
+    height: 24px; /* x*3 */
+    border-radius: 16px; /* x*2 */
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+input[type="checkbox"].ios8-switch + label:hover:after {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+input[type="checkbox"].ios8-switch:checked + label:after {
+    margin-left: 16px;
+}
+input[type="checkbox"].ios8-switch:checked + label:before {
+    background: #55D069;
+}
+
+
+/* End iOS Sliders */
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 7pt;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #333;
+  background: #CCC;
+  border-radius: 25px;
+  border: 0px solid #AAA;
+}
+input[type=range]::-webkit-slider-thumb {
+  border: none;
+  height: 15pt;
+  width: 15pt;
+  border-radius: 50%;
+  background: #FFF;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -4pt;
+  box-shadow: 1px 1px 3px #AAA;
+}
+input[type=range]:hover::-webkit-slider-thumb {
+  box-shadow: 1px 1px 5px #777;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #CCC;
+}
+
+#settings {
+    background: #DDD;
+}
+#settings_title {
+    background: #FFF;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 11pt;
+}
+.settings_gap {
+    height: 30px;
+    width: 100%;
+    background: #DDD;
+    display: block;
+}
+.settings_content {
+    padding: 10px;
+    background: #FFF;
+}
+.settings_content > a {
+    tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+    color: #36F;
+    font-family: 'Roboto';
+    font-size: 12pt;
+    text-decoration: none;
+}
+.settings_desc {
+    font-size: 10pt;
+    color: #777 !important;
+    font-family: 'Roboto';
+    padding: 15px;
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+#toggles {
+    width: 100%;
+    table-layout: fixed;
+    font-size: 12pt;
+    font-family: 'Roboto';
+}
+#toggles td:nth-child(even) {
+    text-align: right;
+}
+#dialer {
+    font-family: 'Roboto';
+}
+#dialer_scn {
+    height: 16.6666666667%;
+    width: 100%;
+    background: #FFF;
+    color: #333;
+    text-align: right;
+    font-size: 25pt;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+}
+#dialer_pad {
+    height: 83.3333333333%;
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+}
+.dialerBtn {
+    width: 15vw;
+    height: 15vw;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+    border: solid 1px #333;
+    color: #333;
+    font-size: 20pt;
+    user-select: none;
+    border-radius: 50%;
+}
+.dialerBtn:active {
+    transition: all 250ms linear;
+    filter: invert(100%);
+} 
+#callBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #FFF;
+    background: #33cc33;
+    height: 16.6666666667%;
+    user-select: none;
+    font-size: 25pt;
+    text-decoration: none;
+}
+#cookie_clicker {
+    background-image: url('http://photos3.fotosearch.com/bthumb/CSP/CSP993/blue-rays-background-drawing__k14946853.jpg');
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cookie {
+    width: 50vw;
+    height: 50vw;
+}
+#cookies {
+    font-family: 'Kavoon';
+    color: #FFF;
+    position: fixed;
+    left: 12.5vw;
+    top: 20vh;
+    width: 75vw;
+    text-align: center;
+    font-size: 20pt;
+}
+#cal {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: lighter;
+}
+#cal_app {
+    background: #EFEFEF;
+}
+.thd {
+    border-bottom: solid 1px #DDD;
+}
+#searchbar {
+    background-color: #DDD;
+    text-align: center;
+    width: calc(80% - 10px);
+    height: calc(90% - 10px);
+    padding: 5px;
+    color: #999;
+    border: none;
+    border-radius: 5vh;
+    overflow: hidden;
+    outline: none;
+}
+#searchbar:focus {
+    text-align: left;
+    color: #333;
+    overflow: auto;
+}</style>
+<script>alert("я помогу тебе разобраться с этим.semokhastepan©")
+alert("Я еще не создал погодную систему нажмите кнопку home телефона чтобы перейти на задний экран")
+alert("длительное нажатие кнопки home и отпустите ее, чтобы открыть siri")
+document.createElement("application");
+window.onload = function(){
+    window.detectingSecondClick = false;
+    window.siri_active = true;
+    window.atHome = true;
+    window.game = {
+        cookies : 0
+    };
+    window.ctrl = Date.now();
+    window.ctrl_ = Date.now();
+    window.recentAppsScreen = false;
+    window.apps = {
+        'safari' : "browser",
+        'calc' : "calculator",
+        'sett' : "settings",
+        'phone' : "dialer",
+        'game' : "cookie_clicker",
+        'social' : "griderly",
+        'calendar' : "cal_app",
+        'weather' : "weather_app"
+    };
+        var d = new Date();
+        var days = {
+            0 : "Воскресенье",
+            1 : "Понедельник",
+            2 : "Вторник",
+            3 : "Среда",
+            4 : "Четверг",
+            5 : "Пятница",
+            6 : "Суббота"
+        };
+        var day = d.getDay();
+        day = days[day];
+    $("#calendar").html("<div style='text-align: center;margin: 0;padding: 0;'><span style='color: red; font-size: 5pt;margin: 0;display: block'>" + day + "</span><span style='font-family: \"Montserrat\";font-size: 20pt !important;color: #333;margin: 0;font-weight: lighter;'>" + d.getDate() + "</span></div>");
+    window.getTime = function(){
+        var time = "";
+        var med = "";
+        var d = new Date();
+        var m = d.getMinutes();
+        var h = d.getHours();
+        if(h > 12){
+            h -= 12;
+            med = "вечер";
+        } else {
+            med = "утро";
+        }
+        if(h === 0){
+            h = 12;
+            med = 'AM';
+        }
+        time += h;
+        if(m <= 9){
+            m = "0" + m;
+        } else {}
+        time += ":" + m + " " + med;
+        return time;
+    };
+    window.goHome = function(){
+        window.atHome = true;
+        $.each($("application"), function(){
+            $(this).hide();
+        });
+        $(".home").show();
+    };
+    window.goHome();
+    window.end = function(appName){
+        $("#" + appName).hide();
+    };
+    window.start = function(appName){
+        $.each($("application"), function(){
+            $(this).hide();
+        });
+        $("#" + appName).show();
+    };
+    
+    $("#ctrl").on("touchstart mousedown", function(e){
+        e.preventDefault();
+        window.ctrl_ = Date.now();
+        $(this).css("background", "linear-gradient(65deg, #333, #555, #333)");
+    });
+    $("#ctrl").on("touchend mouseup", function(e){
+        e.preventDefault();
+        $(this).css("background", "linear-gradient(45deg, #333, #555, #333)");
+        if((Date.now() - window.ctrl_) >= 750){
+            if(window.siri_active === true){
+                window.start("siri");
+            }
+            else {
+                window.start('brokenSiri');
+            }
+        }
+        else if((Date.now() - window.ctrl) <= 250){
+            // Double Clicked
+            window.recentAppsScreen = true;
+            window.start("recentApps");
+            $(".home").css({
+                "height" : "80%",
+                "width" : "80%",
+                "display" : "inline-block"
+            }).appendTo("#currentRecent");
+        }
+        else {
+            if(window.recentAppsScreen === false){
+                $(".home").css({
+                    "height" : "100%",
+                    "width" : "100%",
+                    "display" : "inline-block"
+                }).appendTo("#screen");
+                window.goHome();
+            }
+            else {
+                // Single clicked
+                window.recentAppsScreen = false;
+                $(".home").css({
+                    "height" : "100%",
+                    "width" : "100%",
+                    "display" : "inline-block"
+                }).appendTo("#screen");
+                window.goHome();
+            }
+        }
+        window.ctrl = Date.now();
+    });
+    $(".appIcon").on("touchend click", function(){
+        if(window.recentAppsScreen === false){
+            window.atHome = false;
+            var which = $(this).attr("id");
+            window.start(window.apps[which]);
+        }
+    });
+    $("#screen").on("touchstart click", function(e){
+        if(window.recentAppsScreen === true){
+            e.preventDefault();
+            e.stopPropagation();
+            window.recentAppsScreen = false;
+                $(".home").css({
+                    "height" : "100%",
+                    "width" : "100%",
+                    "display" : "inline-block"
+                }).appendTo("#screen");
+                window.goHome();
+        } else {}
+    });
+    $(".calcCtrl, .lightCalc, .orangeCalc").on("touchstart click", function(e){
+        e.preventDefault();
+        var which = $(this).text();
+        switch(which){
+            case "AC":
+                $("#calc_scn").html("");
+                break;
+            case "+/-":
+                var currentVal = $("#calc_scn").text();
+                currentVal = currentVal.split("");
+                if(currentVal[currentVal.length - 1] == "-"){
+                    currentVal[currentVal.length - 1] = "";
+                    currentVal = currentVal.join("");
+                    $("#calc_scn").text(currentVal);
+                }
+                else {
+                    $("#calc_scn").append("-");
+                }
+                break;
+            case "=":
+                var equation = $("#calc_scn").text();
+                equation = equation.replace(/\×/g, "*");
+                equation = equation.replace(/\÷/g, "/");
+                $("#calc_scn").text(eval(equation));
+                break;
+            default:
+                $("#calc_scn").append(which);
+                break;
+        }
+    });
+    $("#cookie").on("touchstart mousedown", function(e){
+        e.preventDefault();
+        $(this).css({
+            "height" : "47vw",
+            "width" : "47vw"
+        });
+    });
+    $("#cookie").on("touchend mouseup", function(e){
+        e.preventDefault();
+        $(this).css({
+            "height" : "50vw",
+            "width" : "50vw"
+        });
+        window.game.cookies += 1;
+        $("#cookies").text(window.game.cookies + " Cookies");
+    });
+    $(".dialerBtn").on("touchstart mouseup", function(e){
+        e.preventDefault();
+        $("#dialer_scn").append($(this).text());
+        $("#callBtn").attr("href", "tel:" + $("#dialer_scn").text());
+    });
+    $("input[type=checkbox]").on('click', function(){
+        window[$(this).attr('id')] = $(this).is(":checked");
+    });
+    $("#recentApps").on("touchstart mouseup", function(e){
+        e.stopPropagation();
+    });
+    setInterval(function(){
+        $("#topBarClock").text(window.getTime());
+    }, 1000);
+    // Set Calendar
+    function cal() {
+        var calBox = document.querySelector("#cal");
+        var days = ["Вос", "Пон", "Вт", "Ср", "Чет", "Пт", "Суб"]
+        var months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+            "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"
+        ];
+        var date = new Date();
+        var maxDays = 31;
+        var month = date.getMonth();
+        if (month == 0 || month == 2 || month == 4 || month == 6 || month == 7 || month == 9 || month == 11) {
+            maxDays = 31;
+        } else if (month == 1) {
+            maxDays = 28;
+        } else if (month == 3 || month == 5 || month == 8 || month == 10) {
+            maxDays = 30;
+        }
+        var day = days[date.getDay()];
+        // Day of Week ^
+        var dateNum = date.getDate();
+        // Day of Month ^
+        // Calculate first day of month
+        date.setDate(1)
+        var dateX = date.getDay();
+        date.setDate(dateNum)
+        var i = dateX;
+        while (dateX > 0) {
+            if ((dateX % 6) >= 1) {
+                dateX -= 6;
+            } else {
+                i -= dateX
+                dateX -= dateX;
+            }
+        }
+        i += 8;
+        $(".day").eq(0).html(months[month] + " <span style='font-family: \"Montserrat\", sans-serif;'>" + new Date().getFullYear() + "</span>").css({
+            "font-size" : "15pt",
+            "texy-align" : "left"
+        });
+        $(".day").eq(i).text("1").css("border-bottom", "solid 1px #DDD");
+        var cnt = 1;
+        while (cnt <= maxDays) {
+            $(".day").eq(i).text(" " + cnt + " ").css("border-bottom", "solid 1px #DDD");
+            ++cnt;
+            ++i;
+        }
+        $(".day:contains(' " + dateNum + " ')").css({
+            "background": "#F33",
+            "border-radius" : "50%",
+            "color" : "#FFF"
+        });
+    }
+    cal();
+    $("#searchbar").on("keyup", function(e){
+        e.preventDefault();
+        if(e.which == 13){
+            $("#browse").remove();
+            var browse = $("<embed>")
+                .css({
+                    "width" : "75vw",
+                    "height" : "65vh",
+                    "margin" : "0",
+                    "overflow" : "auto"
+                })
+        var value = $(this).val();
+        $(this).trigger("blur");
+        if(value.match(/\./)){
+            $(browse).attr("src", value);
+            var text = value.replace(/http:\/\/|https:\/\//g, "");
+            text = value.split("/")[0];
+            $("#searchbar").text(text);
+        }
+        else {
+            $(browse).attr("src", "https://bing.com/search?q=" + value);
+        }
+        $("#browser").append(browse)
+        } else {}
+    });
+};</script>
